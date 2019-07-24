@@ -39,6 +39,10 @@ class FlutterUmpush {
     _channel.invokeMethod('configure');
   }
 
+  void initUmeng(String umengKey){
+    _channel.invokeMethod('initUmeng', {'umengKey': umengKey});
+  }
+
   void test() {
     _channel.invokeMethod('test');
   }
